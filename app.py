@@ -16,7 +16,7 @@ encoders = joblib.load(f"{model_path}\\encoders.pkl")
 st.title(" Prédiction du risque d'AVC")
 
 # === Saisie utilisateur ===
-gender = st.selectbox("Genre", ["Male", "Female",])
+gender = st.selectbox("Genre", ["Male", "Female"])
 age = st.slider("Âge", 1, 100, 30)
 hypertension = st.selectbox("Hypertension", [0, 1])
 heart_disease = st.selectbox("Maladie cardiaque", [0, 1])
